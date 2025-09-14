@@ -3,14 +3,13 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   experimental: {
-    appDir: true,
+    appDir: true, // Ensure app directory features are enabled
   },
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "images.unsplash.com",
-        port: "",
+        hostname: "images.unsplash.com", // your external images
         pathname: "/**",
       },
     ],
