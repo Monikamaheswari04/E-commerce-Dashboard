@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -9,6 +7,10 @@ import { placeOrder } from "@/store/slices/ordersSlice";
 import { clearCart } from "@/store/slices/cartSlice";
 import { clearCheckout } from "@/store/slices/checkoutSlice";
 import toast from "react-hot-toast";
+
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 
 export default function PaymentPage() {
   const { items, address, isBuyNow } = useAppSelector((s) => s.checkout);
@@ -118,4 +120,5 @@ export default function PaymentPage() {
       </div>
     </div>
   );
+
 }
