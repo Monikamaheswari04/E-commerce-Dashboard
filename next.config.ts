@@ -2,9 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  experimental: {
-    appDir: true, // Ensure app directory features are enabled
-  },
+  //experimental: {
+    //appDir: true, // Ensure app directory features are enabled
+  //},
   images: {
     remotePatterns: [
       {
