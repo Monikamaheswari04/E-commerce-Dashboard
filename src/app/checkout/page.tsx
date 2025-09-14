@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -9,6 +6,9 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { setCheckoutItems } from "@/store/slices/checkoutSlice";
 import Image from "next/image";
 import toast from "react-hot-toast";
+
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 
 export default function CheckoutPage() {
   const cart = useAppSelector((s) => s.cart.items);
@@ -158,3 +158,4 @@ export default function CheckoutPage() {
     </div>
   );
 }
+
